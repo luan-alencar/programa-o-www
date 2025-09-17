@@ -1,0 +1,7 @@
+
+body{min-height:100vh;display:flex;flex-direction:column}
+#hero{min-height: calc(320px + 1rem)}
+.card-title{font-size:1rem}
+.price{font-weight:700}
+.badge-category{position:absolute;top:.75rem;left:.75rem}
+.object-fit-cover{object-fit:cover}
