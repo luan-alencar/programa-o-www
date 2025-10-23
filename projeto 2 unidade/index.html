@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>App GitHub – Básico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__row">
+      <h1 class="brand">Usuários do GitHub</h1>
+      <form id="searchForm" class="search" autocomplete="off">
+        <input id="searchInput" type="text" placeholder="Buscar por login..." />
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="grid" class="grid"></div>
+
+    <div class="actions">
+      <button id="loadMoreBtn">Carregar mais</button>
+    </div>
+  </main>
+
+
+  <div id="errorModal" class="modal hide">
+    <div class="modal__dialog">
+      <button class="modal__close" aria-label="Fechar" id="closeError">&times;</button>
+      <h3>Atenção</h3>
+      <p id="errorMessage">—</p>
+      <div class="modal__footer">
+        <button id="okError">Ok</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
